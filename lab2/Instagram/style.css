@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+}
+
+.page{
+    width: 100%;
+    height: 628.5px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.phone-logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.screen1{
+    position: absolute;
+    margin-top: 28px;
+    margin-left: -250px;
+
+}
+.login-block{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 350px;
+    margin-top: 12px;
+    height: 584.5px;
+}
+.login{
+    border: 1px solid rgb(219, 219, 219);
+    align-items: center;
+    border-radius: 2px;
+    
+}
+.insta-logo{
+    background-position: 0px -52px;
+    background-size: auto;
+    width: 175px;
+    height: 51px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    align-items: center;
+    overflow-y: visible;
+    overflow-x: visible;
+    display: flex;
+    margin: auto;
+    margin-top:36px;
+    margin-bottom: 12px;
+}
+.inputs{
+    align-items: stretch;
+    flex-direction: column;
+    display: flex;
+    margin-top: 24px;
+}
+.inputs1{
+    margin-top: 24px;
+    align-items: stretch;
+    flex-direction: column;
+    display: flex;
+    margin: 0 40px 6px;
+    margin-bottom: 7px;
+}
+.inputs2{
+    align-items: stretch;
+    flex-direction: column;
+    display: flex;
+    margin: 0 40px 6px;
+    margin-bottom: 10px;
+}
+#email, #password{
+    height:32px;
+    display: flex;
+    min-width: 0;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+    border: 1px solid rgb(219, 219, 219);
+    position: relative;
+    margin: auto;
+
+    width: 260px;
+    /* margin-right: 10px; */
+    /* justify-content: center; */
+}
+.login-button{
+    background-color: rgb(0, 146, 246);
+    /* border: 10px solid, rgb(219, 219, 219); */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 273px;
+    height: 32px;
+    font-size: 14px;
+}
+.log-in{
+    text-align: center;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.or{
+    display: flex;
+    margin: 0 auto;
+}
+.line{
+    color: rgb(0, 0, 0);
+    top: .45em;
+    height: 1px;
+    flex-shrink: 1;
+    position: relative;
+    width: 100px;
+    background-color: rgb(219, 219, 219);
+    align-items: center;
+    margin: 3px 25px 20px;
+
+}
+.or{
+    text-align: center;
+}
+.or-word{
+    font-size: 14px;
+    color: rgb(115,115, 115);
+    font-family: sans-serif;
+    font-weight:normal;
+}
+
+.facebook{
+    margin: 25px auto;
+}
+
+.facebook-logo{
+    border: none;
+    background-color: white;
+    color: #385185;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.facebook-logo-img{
+    width: 16px;
+    height: 16px;
+}
+.forgot-password{
+    margin: 15px auto;
+    margin-top: -10px;
+    color: #385185;
+    font-size: 12px;
+}
+a{
+
+    font-family: inherit;
+    color: inherit;
+
+}
+
+.login-bottom{
+    border: 1px solid rgb(219, 219, 219);
+    align-items: center;
+    border-radius: 2px;
+    width: 348px;
+    /* height: 100px; */
+    margin-top: 10px;
+    display: inline-block;
+}
+.sign-up{
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    margin: 20px auto;    
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+.sign-up-link{
+    color:rgb(0, 149, 246);
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.get-app{
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.download{
+    text-align: center;
+    margin: 10px auto;
+}
+
+.app-store-img, .google-play-img{
+    width: 136px;
+    height: 40px;
+}
+
+.end{
+    width: 930px;
+    margin: 50px 300px;
+    display: flex;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
+    flex-wrap: wrap;
+}
+.end p{
+    line-height: 2;
+    text-align: center;
+    color: #8a8d91;
+    font-size: 12px;
+    }
+.end #s{
+    margin-top: -15px;
+    margin-left: 300px;
+    font-size: 12px;
+}
+
+#arrow {
+    font-size: 18px;
+}
