@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let calculator = {
+            a: 5,
+            b: 7,
+            read(){
+                let func = () => alert('a: ' + this.a + ', b: ' + this.b);
+                func();
+            },
+            sum(){
+                let func = () => this.a + this.b;
+                return func();
+            },
+            mul(){
+                let func = () => this.a * this.b;
+                return func();
+            }
+        }
+        calculator.read();
+        alert( calculator.sum() );
+        alert( calculator.mul() );
+    </script>
+</body>
+</html>

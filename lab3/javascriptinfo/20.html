@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow function</title>
+</head>
+<body>
+    <script>
+        function ask(question, yes, no){
+            confirm(question) ? yes() : no();
+        }
+        ask(
+            "Do you agree?",
+            () => alert("You agreed!"),
+            () => alert("You disagreed!")
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function multiplyNumeric(menu) {
+            for(let key in menu){
+                if(typeof menu[key] === "number")
+                    menu[key] *= 2;
+            }
+        }
+        function print(menu){
+            for(let key in menu){
+                alert(key + ': ' + menu[key]);
+            }
+        }
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+        print(menu);
+        multiplyNumeric(menu);
+        print(menu);
+    </script>
+</body>
+</html>

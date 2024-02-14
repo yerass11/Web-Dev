@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProperLogic</title>
+</head>
+<body>
+    <script>
+        let login = prompt("Who is?", '');
+        if(login === '')
+            alert("Canceled!");
+        else if(login === "Admin"){
+            let password = prompt("Enter password:", '');
+            if(password === '')
+                alert("Canceled!");
+            else if(password === "Admin")
+                alert("Hello!");
+            else
+                alert("Wrong password!");
+        }
+        else
+            alert("Idk you!");
+    </script>
+</body>
+</html>

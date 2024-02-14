@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accumulator</title>
+</head>
+<body>
+    <script>
+        function Accumulator(startValue){
+            this.value = startValue;
+            this.read = function (){
+                let func = () => this.value += Number(prompt("Enter number ->"));
+                func();
+            };
+        }
+        let accumulator = new Accumulator(1);
+        accumulator.read();
+        accumulator.read();
+        alert(accumulator.value);
+    </script>
+</body>
+</html>

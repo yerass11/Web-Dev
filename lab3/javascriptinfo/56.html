@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script src="https://en.js.cx/test/libs.js"></script>
+<script src="56.js"></script>
+<script>
+
+  function groupById(array) {
+    return array.reduce((obj, value) => {
+      obj[value.id] = value;
+      return obj;
+    }, {})
+  }
+
+</script>
