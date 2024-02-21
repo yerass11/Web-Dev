@@ -1,0 +1,30 @@
+.title_name {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items {
+  flex: 1 1 40px;
+  width: 300px;
+  height: 600px;
+  margin: 15px;
+}
+
+.border_items {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

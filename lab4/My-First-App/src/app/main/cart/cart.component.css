@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items {
+  flex: 1 1 40px;
+  width: 300px;
+  height: 500px;
+  margin: 15px;
+}
+
+.border_items {
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}

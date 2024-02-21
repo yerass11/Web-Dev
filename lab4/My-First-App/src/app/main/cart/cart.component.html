@@ -1,0 +1,59 @@
+<h3>Cart</h3>
+<div class="container">
+  <div class="cart-item" *ngFor="let product of items">
+    <p>
+      <a routerLink="/shipping">Shipping Prices</a>
+    </p>
+
+    <div class="items">
+      <h3>
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]">
+          {{ product.name }}
+        </a>
+      </h3>
+      <div class="title_name">
+        <img src="../assets/img/{{product.img}}" alt="Product From Kaspi" width="250" height="300"/>
+      </div>
+      <div class="border_items">
+        <p *ngIf="product.description">
+          Description: {{ product.description }}
+        </p>
+        <p *ngIf="product.rating">
+          ★{{product.rating}}★
+        </p>
+        <p>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <button type="button" (click)="share()">
+              Share
+            </button>
+          </a>
+        </p>
+        <app-product-alerts
+          [product]="product"
+          (notify)="onNotify()">
+        </app-product-alerts>
+      </div>
+    </div>
+  </div>
+</div>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+
+</form>
