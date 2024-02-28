@@ -1,0 +1,46 @@
+<div class="filter-side">
+    <button class="tablinks" (click)="updateFilteredProducts('None')">Все</button>
+    <button class="tablinks" (click)='updateFilteredProducts("Аудио, Видео, Развлечения")'>Аудио, Видео, Развлечения</button>
+    <button class="tablinks" (click)="updateFilteredProducts('Телефоны и гаджеты')" >Телефоны и гаджеты</button>
+    <button class="tablinks" (click)="updateFilteredProducts('Бытовая техника')" > Бытовая техника</button>
+    <button class="tablinks" (click)="updateFilteredProducts('Канцелярия')" > Канцелярия </button>
+</div>
+
+<div class="product-list">
+    <div *ngFor = "let product of filtered_products" class = "main-product">
+        <div class="crop">
+            <img src = {{product.img}} alt = "photo"  class = "img-crop" >  
+        </div>
+        <div class = "text-content">
+            <h3>
+                <a [title] = "product.name + ' details'" >
+                    {{product.name}}
+                </a>
+            </h3>
+
+            <div class = "rate-price-info">
+                <p *ngIf = "product.price" class = "right-border" style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
+                    Цена: <br><br><strong> {{product.price}} ₸</strong>
+                </p>
+                
+                <p *ngIf = "product.rating" style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
+                    Оценка: <br><br><strong> {{product.rating}}</strong>
+                </p>
+            </div>
+
+            <div class = "buttons-tab">
+                <button type="button"  class = "detail-button" [routerLink] = "['/products', product.name]">
+                    Read more
+                </button>
+
+                <button type="button" (click)="incrementLikes(product.id)" class = "like-button">
+                    <i class="fa-solid fa-heart fa-xl" ></i>
+                    {{product.like}}
+                </button>
+                <button class="delete-button" (click) = "deleteProduct(product.id)" type = "button">
+                    <i class="fa-solid fa-trash fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="detail-of-product" *ngIf = "product">
+    <div class="crop2">
+        <img src = {{product.img}} alt = "photo"  class = "img-crop" >  
+    </div>
+    <div class = "text-content2">
+        <h3 class = "title">
+            <a [title] = "product.name + ' details'" >
+                {{product.name}}
+            </a>
+        </h3>
+
+        <p *ngIf = "product.description">
+            {{product.description}}
+        </p>
+
+        <div class = "rate-price-info">
+            <p *ngIf = "product.price" class = "right-border" style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
+                Цена: <br><br><strong> {{product.price }} ₸</strong>
+            </p>
+            
+            <p *ngIf = "product.rating" style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
+                Оценка: <br><br><strong> {{product.rating}}</strong>
+            </p>
+        </div>
+
+        <div class="buttons">
+            <a href = {{product.source}}>
+                Узнать Больше...
+            </a>
+            <div class = "share-buttons">
+                <button type = "button" (click) = "tgRedirect(product.source)" class = "redirect-button">
+                    <img src = "assets/images/Telegram_logo.svg.webp" width="60%">
+                </button>
+    
+                <button type = "button" (click) = "wpRedirect(product.source)" class = "redirect-button">
+                    <img src = "assets/images/WhatsApp.svg.png" width="80%">
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
