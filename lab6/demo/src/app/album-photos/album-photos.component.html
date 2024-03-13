@@ -1,0 +1,21 @@
+<!--<ul *ngIf="loaded">-->
+<!--  <li *ngFor="let album of albums">-->
+<!--    <a routerLink="/albums/{{album.id}}">-->
+<!--      {{album.id}} {{album.title}}-->
+<!--    </a>-->
+<!--  </li>-->
+<!--</ul>-->
+
+<!--albumId:number;-->
+<!--id:number;-->
+<!--title:string;-->
+<!--url:string;-->
+<h1>Photos of album #{{albumid}}</h1>
+<button routerLink="/albums/{{albumid}}">return back</button>
+
+    <div *ngFor="let photo of photos" routerLink="/albums/{{photo.albumId}}/photos">
+      <h3>{{photo.id}}</h3>
+      <h3>{{photo.title}}</h3>
+      <img [src]="photo.url">
+    </div>
+
