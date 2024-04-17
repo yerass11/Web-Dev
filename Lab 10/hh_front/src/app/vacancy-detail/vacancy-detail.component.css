@@ -1,0 +1,14 @@
+.vacancy-detail {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.vacancy-info {
+  margin-top: 10px;
+}
+
+.vacancy-info div {
+  margin-bottom: 5px;
+}

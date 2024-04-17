@@ -1,0 +1,36 @@
+*{
+  color: #fff;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 20px 50px;
+  background-color: #31363F;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  height: 60px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a{
+  padding: 5px 10px;
+  font-weight: 600;
+
+  transition: .4s;
+}
+
+header ul li a:hover {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,26 @@
+* {
+  color: #fff;
+  background-color: #31363F;
+}
+.vacancy-list {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.vacancy-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vacancy-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.vacancy-list li:hover {
+  background-color: #f0f0f0;
+}
+
